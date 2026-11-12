@@ -1,20 +1,15 @@
-const Info = {
-    pharmacyName: "Aban",
-    doctor: "Ali",
-    phoneNumber: "0901111111",
-    address: "دورود کوی شهید بهشتی کوچه اول",
-};
 
-function PharmacyInfo() {
+
+function PharmacyInfo(props) {
     return (
         <>
-            <h1>pharmacy name : {Info.pharmacyName}</h1>
+            <h1>pharmacy name : {props.name}</h1>
             <br></br>
-            <h2>Doctor name : {Info.doctor} </h2>
+            <h2>Doctor name : {props.dr} </h2>
             <br />
-            <h2>phone Number : {Info.phoneNumber}</h2>
+            <h2>phone Number : {props.phoneNumber}</h2>
             <br />
-            <h2>address : {Info.address}</h2>
+            <h2>address : {props.address}</h2>
         </>
     );
 }
