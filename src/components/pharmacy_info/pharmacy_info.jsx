@@ -1,6 +1,6 @@
 
 
-function PharmacyInfo(name, address, phoneNumber, dr) {
+function PharmacyInfo({name, address, phoneNumber, dr}) {
     return (
         <>
             <h1>pharmacy name : {name}</h1>
