@@ -1,5 +1,10 @@
+
+function handleClick () {
+    alert("welcome to Aban pharmacy");
+}
+
 function MyButton() {
-    return <button>I'm a button</button>;
+    return <button onClick ={handleClick} >I'm a button</button>;
 }
 
 export default MyButton;
