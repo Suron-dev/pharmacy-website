@@ -1,15 +1,15 @@
 
 
-function PharmacyInfo(props) {
+function PharmacyInfo(name, address, phoneNumber, dr) {
     return (
         <>
-            <h1>pharmacy name : {props.name}</h1>
+            <h1>pharmacy name : {name}</h1>
             <br></br>
-            <h2>Doctor name : {props.dr} </h2>
+            <h2>Doctor name : {dr} </h2>
             <br />
-            <h2>phone Number : {props.phoneNumber}</h2>
+            <h2>phone Number : {phoneNumber}</h2>
             <br />
-            <h2>address : {props.address}</h2>
+            <h2>address : {address}</h2>
         </>
     );
 }
