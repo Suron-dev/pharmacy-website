@@ -6,11 +6,11 @@ function Services() {
             <h2>Pharmacy Services</h2>
             <ul>
                 {services.map((service) => (
-                    <li>{service}</li>
+                    <li key={service} >{service}</li>
                 ))}
             </ul>
         </>
     );
 }
 
-export default services;
+export default Services;
