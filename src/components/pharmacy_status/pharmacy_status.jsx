@@ -1,6 +1,9 @@
-function Pharmacy_status() {
-    let isOpen = false;
-    return isOpen ? <h1>باز است</h1> : <h1>بسته است</h1>;
+function PharmacyStatus() {
+    let isOpen = true;
+    return isOpen ? <> 
+    <h1>باز است</h1>
+    <button>تماس با ما</button>
+    </> : <h1>بسته است</h1>;
 }
 
-export default Pharmacy_status;
+export default PharmacyStatus;
