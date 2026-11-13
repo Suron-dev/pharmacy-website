@@ -6,7 +6,9 @@ function Counter() {
         setCount(count + 1);
     }
     function handleClickToDecrease() {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     }
 
     function handleClickToReset() {
