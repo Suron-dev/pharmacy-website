@@ -3,6 +3,7 @@ import MyButton from "./components/button/button";
 import Services from "./components/services/services";
 import Counter from "./components/counter/counter";
 import PharmacyStatus from "./components/pharmacy_status/pharmacy_status";
+import CustomerName from "./components/customer_name/customer_name";
 function App() {
     return (
         <>
@@ -11,6 +12,7 @@ function App() {
             <Services />
             <MyButton />
             <Counter />
+            <CustomerName />
         </>
     );
 }
