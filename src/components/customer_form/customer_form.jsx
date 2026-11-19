@@ -1,18 +1,19 @@
 import { useState } from "react";
 function CustomerForm() {
-    function handleSubmit(e){
-        return e.preventDefault();
+    function handleSubmit(e) {
+        console.log(name);
+        e.preventDefault();
     }
 
-    function handleChange(e){
-        return setName(e.target.value);
+    function handleChange(e) {
+        setName(e.target.value);
     }
 
-const [name , setName] = useState("");
+    const [name, setName] = useState("");
 
     return (
         <form onSubmit={handleSubmit} action="">
-            <input onChange={handleChange} type="text" />
+            <input onChange={handleChange} value={name} type="text" />
             <br />
             <br />
             <br />
@@ -21,4 +22,4 @@ const [name , setName] = useState("");
     );
 }
 
-export default CustomerForm ;
+export default CustomerForm;
