@@ -4,6 +4,7 @@ import Services from "./components/services/services";
 import Counter from "./components/counter/counter";
 import PharmacyStatus from "./components/pharmacy_status/pharmacy_status";
 import CustomerName from "./components/customer_name/customer_name";
+import CustomerForm from "./components/customer_form/customer_form";
 function App() {
     return (
         <>
@@ -13,6 +14,7 @@ function App() {
             <MyButton />
             <Counter />
             <CustomerName />
+            <CustomerForm />
         </>
     );
 }
